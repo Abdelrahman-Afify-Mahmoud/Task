@@ -1,0 +1,118 @@
+body {
+  font-family: 'DM Sans',"consolas", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing-card {
+  background-color: #cfd1d7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  position: relative;
+}
+
+.pricing-card .price {
+  background-color: #4361ee;
+  color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.pricing-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.pricing-card p {
+  color: #5a5a5a;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-card ul li::before {
+  content: '✔';
+  color: #4361ee;
+  margin-right: 8px;
+}
+
+.pricing-card .choose-plan-btn {
+  background-color: #4361ee;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card .choose-plan-btn:hover {
+  background-color: #365bb0;
+}
+
+.featured-badge {
+  background-color: #4361ee;
+  color: white;
+  font-size: 12px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  position: relative;
+  width: 80px;
+  height: 20px;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .pricing-table {
+      flex-direction: column;
+      align-items: center;
+  }
+}

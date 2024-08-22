@@ -1,0 +1,108 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "New Amsterdam", "consolas", sans-serif;
+  background: url("https://www.picng.com/upload/children/png_children_36649.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden; /
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: calc(300px * 3);
+}
+
+.class-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.class-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.class-info {
+  text-align: left;
+}
+
+.time {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.description {
+    color: rgb(0, 8, 255);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.arrow {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+/* Hover effects */
+.class-card:hover {
+  transform: translateY(-10px);
+}

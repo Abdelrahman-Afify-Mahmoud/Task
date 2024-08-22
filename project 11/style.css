@@ -1,0 +1,124 @@
+body {
+  font-family: 'Rowdies', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.appointment-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.left-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.left-content h5 {
+  color: #ff5a5f;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left-content h1 {
+  font-size: 36px;
+  color: #12263a;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  color: #7a7a7a;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.services {
+  display: flex;
+}
+
+.service-box {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.service-box:last-child {
+  margin-right: 0;
+}
+
+.service-box .icon {
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 18px;
+  color: #12263a;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #7a7a7a;
+}
+
+.right-content {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.right-content h2 {
+  color: #12263a;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+form .form-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+form .form-group input,
+form .form-group select,
+form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+form .form-group input:last-child,
+form .form-group select:last-child {
+  margin-right: 0;
+}
+
+form .form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e14b4f;
+}
